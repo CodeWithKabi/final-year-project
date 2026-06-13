@@ -12,6 +12,7 @@ frontend/build/
 
 # Environment Variables
 .env
+backend/.env
 
 # Database Export Files
 Exported db/

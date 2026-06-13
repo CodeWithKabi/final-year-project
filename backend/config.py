@@ -1,17 +1,14 @@
-# DB_CONFIG = {
-#     "host": "localhost",
-#     "user": "root",
-#     "password": "admin",
-#     "database": "sleep_disorder_db"
-# }
+from dotenv import load_dotenv
+import os
 
-# SECRET_KEY = "sleep_secret_key"
+load_dotenv()
 
 DB_CONFIG = {
-    "host": "bxucqweeoxckx7x0iiag-mysql.services.clever-cloud.com",
-    "user": "u7uzo3hhtffnusg6",
-    "password": "77v3OxDuVncbWqTAbPuU",
-    "database": "3306"
+    "host": os.getenv("DB_HOST"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME"),
+    "port": 3306
 }
 
-SECRET_KEY = "sleep_secret_key"
+SECRET_KEY = os.getenv("SECRET_KEY")
