@@ -16,7 +16,7 @@ export default function Dashboard() {
   useEffect(() => {
 
   axios
-    .get("http://127.0.0.1:5000/dashboard")
+   .get("https://sleep-disorder-backend-s7oq.onrender.com/dashboard")
     .then((res) => {
 
       setStats(res.data);

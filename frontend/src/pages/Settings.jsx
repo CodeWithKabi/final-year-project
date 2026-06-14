@@ -1455,7 +1455,7 @@ onChange={(e) =>
       try {
 
         await axios.put(
-  "http://127.0.0.1:5000/settings/1",
+  "https://sleep-disorder-backend-s7oq.onrender.com/settings/1",
   {
     dark_mode: darkMode,
 

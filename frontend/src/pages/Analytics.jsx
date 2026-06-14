@@ -32,7 +32,7 @@ const fetchAnalytics = async () => {
   try {
 
     const response = await axios.get(
-      "http://127.0.0.1:5000/analytics"
+      "https://sleep-disorder-backend-s7oq.onrender.com/analytics"
     );
 
     setAnalytics(response.data);

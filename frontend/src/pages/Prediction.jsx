@@ -68,7 +68,7 @@ export default function Prediction() {
 
     const response = await axios.post(
 
-      "http://127.0.0.1:5000/predict",
+       "https://sleep-disorder-backend-s7oq.onrender.com/predict",
 
       {
 

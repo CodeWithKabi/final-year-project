@@ -51,7 +51,7 @@ const barData = [
 
 useEffect(() => {
   axios
-    .get("http://127.0.0.1:5000/analytics")
+   .get("https://sleep-disorder-backend-s7oq.onrender.com/analytics")
     .then((res) => {
       setAnalytics(res.data);
     })

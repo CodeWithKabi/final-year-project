@@ -34,7 +34,7 @@ const fetchHistory = async () => {
   try {
 
     const response = await axios.get(
-      "http://127.0.0.1:5000/history"
+           "https://sleep-disorder-backend-s7oq.onrender.com/history"
     );
 
    setHistoryData(response.data);
