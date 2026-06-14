@@ -4,10 +4,14 @@ from models import Prediction, Settings
 
 import numpy as np
 import joblib
+import os
+from dotenv import load_dotenv
 
 from database import db
 from models import Prediction
 
+
+load_dotenv()
 # CREATE FLASK APP
 
 app = Flask(__name__)
@@ -17,9 +21,10 @@ CORS(app)
 # DATABASE CONFIGURATION
 
 app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "mysql+pymysql://u7uzo3hhtffnusg6:77v3OxDuVncbWqTAbPuU@"
-    "bxucqweeoxckx7x0iiag-mysql.services.clever-cloud.com:3306/"
-    "bxucqweeoxckx7x0iiag"
+    f"mysql+pymysql://{os.getenv('DB_USER')}:"
+    f"{os.getenv('DB_PASSWORD')}@"
+    f"{os.getenv('DB_HOST')}:3306/"
+    f"{os.getenv('DB_NAME')}"
 )
 
 app.config["SQLALCHEMY_ENGINE_OPTIONS"] = {
