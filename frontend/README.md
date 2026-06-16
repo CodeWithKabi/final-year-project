@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# SleepAI - AI-Based Sleep Disorder Detection System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+SleepAI is a machine learning-powered web application that predicts potential sleep disorders using health and lifestyle data. The system combines a React frontend, Flask backend, MySQL database, and XGBoost machine learning model to provide data-driven insights and support healthcare decision-making.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Sleep disorder prediction using Machine Learning
+* Patient management system
+* Prediction history tracking
+* Analytics dashboard
+* Reporting system
+* Responsive user interface
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Frontend:
+https://final-year-project-nine-beta.vercel.app
 
-### `npm test`
+### Demo Access
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Demo credentials are available on the login page of the live application.
 
-### `npm run build`
+## Dataset & Resources
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Google Drive: [Google Drive Link]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://drive.google.com/drive/folders/1L98F3JqWq4DDKrtZe5zbs1_zW8Xw9WJt?usp=sharing 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Resources include:
 
-### `npm run eject`
+* Dataset
+* User Guide
+* Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+For detailed installation and usage instructions, please refer to the User Guide.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technology Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* React.js
+* Tailwind CSS
+* Axios
 
-## Learn More
+### Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Flask
+* Flask-CORS
+* SQLAlchemy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Machine Learning
 
-### Code Splitting
+* XGBoost
+* NumPy
+* Joblib
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Database
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* MySQL
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Vercel
+* Render
+* Clever Cloud
 
-### `npm run build` fails to minify
+## System Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User
+│
+▼
+React Frontend (Vercel)
+│
+▼
+Flask REST API (Render)
+│
+▼
+MySQL Database (Clever Cloud)
+│
+▼
+XGBoost Machine Learning Model
+
+## Quick Local Setup
+
+```bash
+git clone https://github.com/CodeWithKabi/final-year-project.git
+
+cd final-year-project
+
+# Backend
+cd backend
+pip install -r requirements.txt
+python app.py
+
+# Frontend
+cd ../frontend
+npm install
+npm start
+```
+
+For complete setup instructions, environment configuration, and troubleshooting, refer to the User Guide.
+
+## Future Improvements
+
+* Direct dataset management through the web application
+* Advanced reporting and export options
+* Additional machine learning models for comparison
+* User role management and authentication enhancements
+* Real-time health monitoring integration
+* Improved visualization and analytics features
+
+## Author
+
+**Kabilan G K**
+
+GitHub: https://github.com/CodeWithKabi
+
+LinkedIn: https://www.linkedin.com/in/kabl06
+
+
