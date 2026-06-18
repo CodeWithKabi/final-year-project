@@ -117,7 +117,8 @@ const handleSubmit = async (e) => {
     marginBottom: "20px",
   }}
 >
-  Predict Sleep Apnea, Insomnia and Healthy Sleep Patterns using Machine Learning.
+ ⚠️ Demo Note:
+The backend is hosted on a free-tier cloud service. The first login or page load may take 30–60 seconds while the server wakes up.
 </p>
 
       <form onSubmit={handleSubmit}>
